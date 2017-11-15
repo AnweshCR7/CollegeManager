@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <!--<include
+        android:id="@+id/tool_bar"
+        layout="@layout/tool_bar"
+        ></include>
+        fab:fab_colorNormal="@color/white"-->
+   <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <GridView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:numColumns="2"
+        android:verticalSpacing="2.5dp"
+        android:horizontalSpacing="2.5dp"
+        android:stretchMode="columnWidth"
+        android:layout_marginEnd="2.5dp"
+        android:layout_marginStart="2.5dp"
+        android:layout_marginTop="2.5dp"
+        android:layout_marginBottom="2.5dp"
+
+
+    />
+    <android.support.v4.view.ViewPager xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.seproject.classmate.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        fab:fab_addButtonColorNormal="@color/zomato"
+        fab:fab_addButtonColorPressed="@color/zomato_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:menu_backgroundColor = "@color/black_semi_transparent"
+        fab:menu_animationDelayPerItem="100"
+        android:layout_alignBottom="@+id/pager"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/pager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/schedule"
+            fab:fab_title="DashBoard"
+            fab:fab_icon="@drawable/ic_account_box_white_36dp"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/team"
+            fab:fab_title="TimeTable"
+            fab:fab_icon="@drawable/schedule"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/sponsors"
+            fab:fab_title="Notifications"
+            fab:fab_icon="@drawable/ic_notifications_white_48dp"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+
+    </com.seproject.classmate.FloatingActionsMenu>
+
+    <!--android:gravity="center"
+    android:columnWidth="185dp"-->
+</RelativeLayout>

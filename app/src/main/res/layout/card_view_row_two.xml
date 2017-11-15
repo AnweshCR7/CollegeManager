@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/card_view_row">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        card_view:cardBackgroundColor="@color/primary"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+            <LinearLayout
+                android:id="@+id/Text_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginBottom="5dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:textColor="#EEFF41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:layout_marginEnd="5dp"
+
+                        android:textSize="23dp" />
+                    <TextView
+                        android:textColor="#EEFF41"
+                            android:layout_marginStart="5dp"
+                            android:id="@+id/textView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+
+                            android:textSize="23dp" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/textView2"
+                    android:textColor="@color/white"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="5dp"
+                    android:textSize="17dp"
+                    />
+                <TextView
+                    android:id="@+id/textView4"
+                    android:textColor="#EEFF41"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="20dp"
+                    android:textStyle="italic"
+                    android:gravity="center_horizontal" />
+
+            </LinearLayout>
+            <!--<LinearLayout
+                android:id="@+id/ImageButton_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/Text_layout"
+                android:layout_toRightOf="@id/person_photo"
+                android:layout_toEndOf="@id/person_photo">
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"-->
+
+
+            <!--</LinearLayout>-->
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+<!--this layout defines the card layout for one team member.-->
+
+    <!--android:layout_toRightOf="@+id/person_photo"
+                    android:layout_toEndOf="@+id/person_photo"-->

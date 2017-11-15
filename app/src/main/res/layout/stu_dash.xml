@@ -1,0 +1,128 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/myLayout">
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+    <TextView
+        android:layout_marginTop="20dp"
+
+        android:id="@+id/text"
+        android:layout_below="@id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:paddingTop="10dp"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/zomato_pressed"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text"
+        android:id="@+id/Attend_Button"
+        android:textColor="@color/white"
+        android:background="@color/ColorPrimary"
+        android:text="Log Your Attendance"
+        android:clickable="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:elevation="8dp"
+        android:focusable="true"
+
+        />
+
+    <TextView
+
+        android:id="@+id/text1"
+        android:layout_below="@id/Attend_Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:text="Following attendance may require attention!"
+        android:textStyle="italic"
+        android:textColor="@color/material_blue_grey_800"
+        />
+
+    <ScrollView
+        android:layout_below="@id/text1"
+        android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/scroll"
+    android:scrollbarStyle="insideOverlay"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/llayout">
+    </LinearLayout>
+    </ScrollView>
+    <!-- android:layout_below="@+id/tool_bar"-->
+
+    <com.seproject.classmate.FloatingActionsMenu
+        android:id="@+id/multiple_actions"
+        android:scaleType="fitXY"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        fab:fab_addButtonColorNormal="@color/zomato"
+        fab:fab_addButtonColorPressed="@color/zomato_pressed"
+        fab:fab_addButtonPlusIconColor="@color/white"
+        fab:fab_labelStyle="@style/menu_labels_style"
+        fab:menu_backgroundColor = "@color/black_semi_transparent"
+        fab:menu_animationDelayPerItem="100"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/toolbar">
+
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/mypink"
+            fab:fab_title="Courses"
+            fab:fab_icon="@drawable/ic_assignment_white_36dp"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/team"
+            fab:fab_title="TimeTable"
+            fab:fab_icon="@drawable/schedule"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_d"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/sponsors"
+            fab:fab_title="Notifications"
+            fab:fab_icon="@drawable/ic_notifications_white_48dp"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+
+        <com.seproject.classmate.FloatingActionButton
+            android:id="@+id/action_c"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            fab:fab_colorNormal="@color/schedule"
+            fab:fab_title="Log Out"
+            fab:fab_icon="@drawable/ic_power_settings_new_white_48dp"
+            fab:fab_colorPressed="@color/black_semi_transparent"/>
+    </com.seproject.classmate.FloatingActionsMenu>
+
+
+</RelativeLayout>

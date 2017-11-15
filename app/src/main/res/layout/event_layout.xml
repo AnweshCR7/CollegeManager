@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventsMain">
+
+    <include layout="@layout/view_toolbar"
+        android:id="@+id/toolbar"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_header"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        android:paddingTop="20dp"
+        android:textColor="@color/zomato_pressed"
+        android:text="Percentage-Attendence"
+        android:textSize="25dp"/>
+
+    <com.seproject.classmate.NumberProgressBar
+        android:id="@+id/number_progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_header"
+        android:padding="20dp"
+        style="@style/NumberProgressBar_Passing_Green"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/my_recycler_view"
+        android:layout_below="@id/number_progress_bar"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"/>
+
+</RelativeLayout>
+
+<!-- This layout is supposed to bring together the cards for all the events which have
+    been created using he event_card layout-->

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- These colors are from the MS app-->
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="black_semi_transparent">#D9000000</color>
+    <color name="black">#000000</color>
+    <color name = "background_tint">#C2F5F5F5</color>
+    <color name="background">#E3F2FD</color>
+    <color name="half_black">#808080</color>
+    <!--<color name="white">#fafafa</color>-->
+    <color name="white_pressed">#f1f1f1</color>
+    <color name="zomato">#1565C0</color>
+
+
+    <color name="pink">#e91e63</color>
+    <color name="zomato_pressed">#1976D2</color>
+    <color name="primary_darker">#1565C0</color>
+    <color name="blue_semi_transparent">#805677fc</color>
+    <color name="blue_semi_transparent_pressed">#80738ffe</color>
+    <color name="primaryDark">#1565C0</color>
+    <color name="ColorPrimaryDark">#0D47A1</color>
+    <color name="primary_dark">#0D47A1</color>
+
+    <color name="phototint">#88101010</color>
+    <color name="primary">#0288D1</color>
+    <color name="ColorPrimary">#0288D1</color>
+
+    <!--<color name="accent">#eeff41</color>-->
+    <color name="home">#1565C0</color>
+    <color name="events">#ff7e4e9f</color><color name="mypink">#E91E63</color>
+    <color name="sponsors">#ffe0b425</color>
+    <color name="schedule">#ffe12d00</color>
+    <color name="team">#43A047</color>
+
+    <!-- These colors are from the github login app-->
+   <!-- <color name="primary">#FF5252</color>
+    <color name="primary_dark">#E12929</color>
+    <color name="primary_darker">#CC1D1D</color>-->
+    <color name="accent">#FFFFFF</color>
+
+    <color name="jet">#222222</color>
+    <color name="screenslide_bg">#FF8A80</color>
+
+    <color name="oil">#333333</color>
+    <color name="monsoon">#777777</color>
+    <color name="jumbo">#888888</color>
+    <color name="aluminum">#999999</color>
+    <color name="base">#AAAAAA</color>
+    <color name="iron">#CCCCCC</color>
+    <color name="white">#FFFFFF</color>
+
+
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="windowBackground">#FFFFFF</color>
+    <color name="navigationBarColor">#000000</color>
+
+</resources>

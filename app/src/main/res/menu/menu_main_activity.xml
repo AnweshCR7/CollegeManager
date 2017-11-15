@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+    <group >
+        <item android:id="@+id/action_settings" android:title="@string/action_settings"
+            android:orderInCategory="1" app:showAsAction="never"/>
+        <item android:id="@+id/share" android:title="Share Via"
+            android:orderInCategory="2" app:showAsAction="never"/>
+    </group>
+    <!--item android:id="@+id/show_map"
+        android:title="@string/up"
+        android:orderInCategory="200"
+        android:icon="@drawable/map_ico"
+        app:showAsAction="always"/>-->
+
+
+</menu>
