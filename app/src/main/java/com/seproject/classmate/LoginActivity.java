@@ -121,12 +121,6 @@ public class LoginActivity extends AppCompatActivity {
         login_ok = 0; // initialize to zero to prevent accidental entry...
         //new authorize().execute();
 
-      /*I will need to change this later*/
-        if((email.equals("anwesh"))&&(password.equals("1234")))
-            login_ok = 1;
-        else
-            login_ok = 0;
-
         //login_ok = 1; //TO BE REMOVED ONCE TESTING IS DONE --> dont know why this doesn't work...
         new android.os.Handler().postDelayed(
                 new Runnable() {
@@ -262,7 +256,7 @@ public class LoginActivity extends AppCompatActivity {
         _loginButton.setEnabled(true);
         finish();
 
-        if(true) {
+        if(type.equals("student")) {
             Intent k = new Intent(getBaseContext(), StudentDash.class);
             k.putExtra("user_name", user_name);
             startActivity(k);
